@@ -1,0 +1,90 @@
+package day0915;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
+
+public class Ex5FileMunje extends JFrame implements ActionListener{
+	JTextField textName, textNum, textPrice;
+	JTable table;
+	DefaultTableModel model;
+	JButton btnAdd, btnDelete;
+	String []title = {"Name", "Number", "Price", "Total"};
+	
+	public Ex5FileMunje(String title) {
+		super(title);
+		this.setBounds(700, 100, 400, 400); // 시작위치 x, y, 크기 w, h
+//		this.getContentPane().setBackground(Color.DARK_GRAY); // 프레임 위에 있는 패널의 색상변경
+		this.getContentPane().setBackground(new Color(211, 225, 208)); // 프레임 위에 있는 패널의 색상변경
+		this.setDesign(); // 디자인 코드
+		this.setVisible(true); // 보이게 하기
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 프로그램을 종료해주는 메서드
+	}
+	
+	public void setDesign() {
+		this.setLayout(null);
+		// 라벨, 필드 설정
+		JLabel lblName = new JLabel("이름");
+		lblName.setBounds(10, 20, 30, 30);
+		this.add(lblName);
+		
+		JLabel lblNum = new JLabel("개수");
+		lblNum.setBounds(130, 20, 30, 30);
+		this.add(lblNum);
+		
+		JLabel lblPrice = new JLabel("단가");
+		lblPrice.setBounds(250, 20, 30, 30);
+		this.add(lblPrice);
+		
+		textName = new JTextField();
+		textName.setBounds(40, 20, 80, 30);
+		this.add(textName);
+		
+		textNum = new JTextField();
+		textNum.setBounds(160, 20, 80, 30);
+		this.add(textNum);
+		
+		textName = new JTextField();
+		textName.setBounds(270, 20, 80, 30);
+		this.add(textName);
+		
+		// 버튼 생성
+		btnAdd = new JButton("데이터저장");
+		btnAdd.setBounds(100, 60, 80, 30);
+		this.add(btnAdd);
+		
+		btnDelete = new JButton("데이터삭제");
+		btnDelete.setBounds(200, 60, 80, 30);
+		this.add(btnDelete);
+		
+		// table생성
+		model = new DefaultTableModel(title, 0);
+		table = new JTable(model);
+		JScrollPane jsp = new JScrollPane(table);
+		jsp.setBounds(20, 90, 350, 250);
+		this.add(jsp);
+		
+		btnAdd.addActionListener(this);
+		btnDelete.addActionListener(this);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		e.getSource();
+		System.out.println(e.getSource());
+	}
+	
+	public static void main(String[] args) {
+		new Ex5FileMunje("파일shop");
+	}
+
+	
+}

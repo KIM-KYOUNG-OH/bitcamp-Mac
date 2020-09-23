@@ -1,0 +1,4 @@
+이미지명:/Users/kimgyeong-o/bitcampJAVA/image/연예인사진/2.JPG
+이름:한가인
+A
+나이:30

@@ -1,0 +1,42 @@
+package day0916;
+
+import java.awt.Color;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JScrollBar;
+
+public class Ex1ScrollColor extends JFrame{
+	JScrollBar sbred, sbGreen, sbBlue;
+	JLabel lblRed, lblGreen, lblBlue;
+	int red = 223, green = 196, blue = 219;
+	
+	public Ex1ScrollColor(String title) {
+		super(title);
+		this.setBounds(700, 100, 500, 300); // 시작위치 x, y, 크기 w, h
+//		this.getContentPane().setBackground(Color.DARK_GRAY); // 프레임 위에 있는 패널의 색상변경
+		this.getContentPane().setBackground(new Color(211, 225, 208)); // 프레임 위에 있는 패널의 색상변경
+		this.setDesign(); // 디자인 코드
+		this.setVisible(true); // 보이게 하기
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 프로그램을 종료해주는 메서드
+	}
+	
+	public void setDesign() {
+		this.setLayout(null);
+		JLabel lbl1 = new JLabel("Red");
+		lbl1.setBounds(10, 20, 40, 20);
+		this.add(lbl1);
+		
+		JLabel lbl2 = new JLabel("Green");
+		lbl2.setBounds(10, 100, 40, 20);
+		this.add(lbl2);
+		
+		JLabel lbl3 = new JLabel("Blue");
+		lbl3.setBounds(10, 180, 40, 20);
+		this.add(lbl3);
+	}
+	
+	public static void main(String[] args) {
+		new Ex1ScrollColor("색상표");
+	}
+}

@@ -1,0 +1,22 @@
+package day0908;
+
+import java.util.Date;
+
+public class Ex6Date {
+
+	public static void main(String[] args) {
+		System.out.println("현재 날짜와 시간 출력하기");
+		Date date = new Date();
+		int y = date.getYear() + 1900;
+		int m = date.getMonth() + 1;
+		int d = date.getDate();
+		
+		int hh = date.getHours();
+		int mm = date.getMinutes();
+		int ss = date.getSeconds();
+		
+		System.out.printf("오늘은 %d년 %d월 %d 일입니다.\n", y, m, d);
+		System.out.printf("현재 시간 %d : %d : %d\n", hh, mm, ss);
+	}
+
+}
