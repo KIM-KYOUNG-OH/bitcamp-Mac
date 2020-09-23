@@ -26,7 +26,7 @@ public class Ex4PersonModel {
 		System.out.println("번호\t이름\t혈액형\t자바\t스프링\t키\t생년월일");
 		System.out.println("--------------------------------------------------------------");
 		for(PersonDto dto:list) {
-			System.out.println(dto.getNum()+"\t"+dto.getName()+"\t"+dto.getBlood().toUpperCase()+"형\t"+dto.getJava()
+			System.out.println(dto.getNum()+"\t"+dto.getName()+"\t"+dto.getBlood()+"\t"+dto.getJava()
 			+"\t"+dto.getJava()+"\t"+dto.getSpring()+"\t"+dto.getHeight()+dto.getBirthday());
 		}
 	}
