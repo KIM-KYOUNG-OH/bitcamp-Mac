@@ -19,7 +19,7 @@
     ⑦ DB연결해제 
            conn.close(); 
 
-## 기본 클래스 구조  
+## 기본 클래스 구성  
   1. 오라클 connection 클래스  
       : 드라이버 실행, DB커넥션, DB연결해제
   2. DTO 클래스(Data Transfer Object)  
