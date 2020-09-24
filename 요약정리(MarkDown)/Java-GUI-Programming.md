@@ -43,11 +43,12 @@ public class SwingGibon extends JFrame{
   #### - JTable
     테이블 생성
   #### - DefaultTableModel  
-
+    테이블을 행단위로 쓰거나 삭제(JTable 자체를 다시 생성하지 않아도됨)
   #### - JScrollPane  
-
+    테이블영역 밖의 데이터도 스크롤하여 읽을 수 있도록 함
 ### 2.2 이벤트
-    **방법1) ActionListner 인터페이스를 implements**  
+   **방법1) ActionListner 인터페이스를 implements**  
+   
     -> actionPerformed(ActionEvent e) 오버라이딩  
     -> Object 참조변수에 getSource를 이용해서 이벤트 소스를 저장...조건문을 이용해서 이벤트 소스마다 수행될 로직을 선언  
     -> UI디자인 객체마다 addActionListener 메서드를 사용해서 actionPerformed 메서드 호출   
