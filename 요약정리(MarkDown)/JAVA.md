@@ -10,3 +10,6 @@
     e1.printStackTrace();
   }  
   ```  
+
+#### - 날짜 출력
+    Date 클래스(deprecated)보다 Calendar클래스가 권장됨
