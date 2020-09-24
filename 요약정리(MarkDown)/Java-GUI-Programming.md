@@ -29,28 +29,28 @@ public class SwingGibon extends JFrame{
 ```
 
 ## 2. 자바 라이브러리
-### 2.1 UI 디자인 
-#### - JFrame  
+  ### 2.1 UI 디자인 
+  #### - JFrame  
     프레임 생성
-#### - JLabel
+  #### - JLabel
     패널에 문자열 생성
-#### - JTextField
+  #### - JTextField
     패널에 문자를 입력할 수 있는 빈칸 생성
-#### - JComboBox
+  #### - JComboBox
     패널에 특정 선택지중 한가지를 선택할 수 있는 박스 생성  
-#### - JButton  
+  #### - JButton  
     패널에 퍼튼 생성
-#### - JTable
+  #### - JTable
     테이블 생성
-#### - DefaultTableModel  
+  #### - DefaultTableModel  
 
-#### - JScrollPane  
-  
+  #### - JScrollPane  
+
 ### 2.2 이벤트
->**방법1) ActionListner 인터페이스를 implements**  
->-> actionPerformed(ActionEvent e) 오버라이딩  
->-> Object 참조변수에 getSource를 이용해서 이벤트 소스를 저장...조건문을 이용해서 이벤트 소스마다 수행될 로직을 선언  
->-> UI디자인 객체마다 addActionListener 메서드를 사용해서 actionPerformed 메서드 호출   
+    **방법1) ActionListner 인터페이스를 implements**  
+    -> actionPerformed(ActionEvent e) 오버라이딩  
+    -> Object 참조변수에 getSource를 이용해서 이벤트 소스를 저장...조건문을 이용해서 이벤트 소스마다 수행될 로직을 선언  
+    -> UI디자인 객체마다 addActionListener 메서드를 사용해서 actionPerformed 메서드 호출   
     
   #### - JOptionPane.showMessageDialog()
     조건에 해당하는 이벤트 발생시 경고창 출력
