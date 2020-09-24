@@ -1,6 +1,7 @@
 # Java-GUI-Programming  
 ## 1. 기본 자바 로직
-<pre><code>import java.awt.Color;
+``` java
+import java.awt.Color;
 import javax.swing.JFrame;
 
 public class SwingGibon extends JFrame{
@@ -24,7 +25,8 @@ public class SwingGibon extends JFrame{
   public static void main(String[] args) {
     new SwingGibon("기본창");
   }
-}</code></pre>  
+}
+```
 
 ## 2. 자바 라이브러리
 ### 2.1 UI 디자인 
