@@ -45,10 +45,10 @@ public class SwingGibon extends JFrame{
   #### - JScrollPane  
   
 ### 2.2 이벤트
-  방법1) ActionListner 인터페이스를 implements 
-    -> actionPerformed(ActionEvent e) 오버라이딩
-    -> Object 참조변수에 getSource를 이용해서 이벤트 소스를 저장...조건문을 이용해서 이벤트 소스마다 수행될 로직을 선언
-    -> UI디자인 객체마다 addActionListener 메서드를 사용해서 actionPerformed 메서드 호출  
+  방법1) ActionListner 인터페이스를 implements  
+    -> actionPerformed(ActionEvent e) 오버라이딩  
+    -> Object 참조변수에 getSource를 이용해서 이벤트 소스를 저장...조건문을 이용해서 이벤트 소스마다 수행될 로직을 선언  
+    -> UI디자인 객체마다 addActionListener 메서드를 사용해서 actionPerformed 메서드 호출   
     
   #### - JOptionPane.showMessageDialog()
     조건에 해당하는 이벤트 발생시 경고창 출력
