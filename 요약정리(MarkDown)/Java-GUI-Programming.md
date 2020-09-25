@@ -29,7 +29,7 @@ public class SwingGibon extends JFrame{
 ```
 
 ## 2. 자바 라이브러리
-  ### 2.1 UI 디자인 
+  ### 2.1 javax.swing 객체  
   #### - JFrame  
     프레임 생성
   #### - JLabel
@@ -45,8 +45,14 @@ public class SwingGibon extends JFrame{
   #### - DefaultTableModel  
     테이블을 행단위로 쓰거나 삭제(JTable 자체를 다시 생성하지 않아도됨)
   #### - JScrollPane  
-    테이블영역 밖의 데이터도 스크롤하여 읽을 수 있도록 함
-### 2.2 이벤트
+    테이블영역 밖의 데이터도 스크롤하여 읽을 수 있도록 함  
+    
+  ### 2.2 java.awt 객체  
+  #### - Image / ImageIcon
+  
+  #### - Canvas
+  
+### 2.3 이벤트
    **방법1) ActionListner 인터페이스를 implements**  
    
     -> actionPerformed(ActionEvent e) 오버라이딩  
