@@ -1,5 +1,6 @@
 # Ajax(Asynchronous JavaScript And XML)  
 - XMLHttpRequest객체를 사용하여 비동기적 페이지 업데이트 작업을 수행하는 것  
+- 전체 페이지를 로드하지 않고 데이터를 서버로부터 받을 수 있는 기술  
 - 새로운 프로그래밍 언어가 아닌 기존의 기술을 현명히 사용한 것
 - ex) 구글맵, 메일, 게시판, 검색어 추천기능
 ## 1. XMLHttpRequest 객체
