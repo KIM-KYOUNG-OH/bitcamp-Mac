@@ -1,7 +1,7 @@
 # WEB  
 ## 1. URL(Uniform Resource Locator)  
 웹 브라우저 주소창에 입력하는 것  
-기본구성 : http://www.11st.co.kr/html/category/1.html?xzone=ctgrl^html  
+기본구성(예시) : http://www.11st.co.kr/html/category/1.html?xzone=ctgrl^html  
 프로토콜 + 서버이름 + 경로 + 쿼리문자열  
 
 ## 2. 웹브라우저(Client)와 웹서버(Server)  
@@ -31,6 +31,6 @@
 
 ## 5. JSP(Java Server Pages)  
 동적 페이지를 작성하는데 사용하는 자바표준기술  
-[이부분은 JSP.md참고](https://github.com/KIM-KYOUNG-OH/bitcamp_academy/blob/master/%EC%9A%94%EC%95%BD%EC%A0%95%EB%A6%AC(MarkDown)/JSP.md).
+[JSP.md]참고 (https://github.com/KIM-KYOUNG-OH/bitcamp_academy/blob/master/%EC%9A%94%EC%95%BD%EC%A0%95%EB%A6%AC(MarkDown)/JSP.md)
 ## 6. WAS(Web Application Server)
 웹 브라우저에 맞는 프로그램을 찾아실행하고 응답을 전송 
