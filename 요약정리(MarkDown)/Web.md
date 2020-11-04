@@ -31,6 +31,6 @@
 
 ## 5. JSP(Java Server Pages)  
 동적 페이지를 작성하는데 사용하는 자바표준기술  
-[JSP.md]참고(https://github.com/KIM-KYOUNG-OH/bitcamp_academy/blob/master/%EC%9A%94%EC%95%BD%EC%A0%95%EB%A6%AC(MarkDown)/JSP.md)
+[JSP.md](https://github.com/KIM-KYOUNG-OH/bitcamp_academy/blob/master/%EC%9A%94%EC%95%BD%EC%A0%95%EB%A6%AC(MarkDown)/JSP.md)
 ## 6. WAS(Web Application Server)
 웹 브라우저에 맞는 프로그램을 찾아실행하고 응답을 전송 
