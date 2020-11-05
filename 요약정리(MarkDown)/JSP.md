@@ -43,16 +43,59 @@ ex) Apache Tomcat
 JSP 페이지에 대한 설정정보 지정 때 사용됨
 - <%@ %>
 - page, taglib, include  
+### 3-1-1. page 디렉티브  
+JSP 페이지에 대한 정보를 입력하기위해 사용
+### 3-1-2. ContentType  
+문서의 MIME타입을 입력(Multipurpose Internet Mail Extensions)  
 
 ## 3-2. 스크립트  
 JSP에서 문서내용을 동적으로 생성하기 위해 사용되는 것  
 - 표현식(Expression): 값 출력  
 - Scriptlet: 자바코드실행  
 - 선언부(Declaration): 자바 메서드를 만듬  
+### 3-2-1. scriptlet  
+```JSP
+<% %> //내부에 자바코드가 위치함
+```  
+### 3-2-2. 표현식  
+```jsp
+<%=값 %>
+```
+### 3-2-3. 선언부  
+```jsp
+// 함수 선언 (자바와 똑같다)
+```
 
 ## 3-3. 기본객체(Implicit Object)  
 웹 어플리케이션 프로그래밍을 하는데 필요한 기능 제공  
 ex) request, response, session, application, page....  
+## 3-3 request 객체  
+### 3-3-1. form으로 클라이언트 요청을 보낼때  
+```html
+<form action="./view.jsp" method="post">
+   <input type="text" name="name">
+   <button type="submit">전송</button>
+</form>
+```
+form 태그안에 input 태그의 'name'속성을 파라미터로 서버에 요청을 보낼수 있다.
+### 3-3-2. GET방식과 POST방식  
+- GET방식은 URL에 쿼리문자열을 붙여서 전송한다  
+- POST방식은 HTTP데이터영역을 이용하여 파라미터값을 전송하며 그덕분에 요청할 수 있는 파라미터의 길이에 제한이 없다  
+- setCharactorEncoding()메서드는 HTTP 데이터 영역을 인코딩할 때 사용할 charSet을 지정한다.  
+따라서 POST는 적용되지만 GET방식은 적용되지 않는다.  
+따라서 GET방식 파라미터를 디코딩하기 위해선 server.xml파일에 useBodyEncodingForURI를 추가해준다.  
+
+## 3-3 response 객체  
+### 3-3-3. 캐시(Cache)  
+브라우저가 요청의 응답 결과를 캐시에 임시로 보관하여 WAS의 중복로딩을 줄여주는 역할을 한다.
+결과적으로 웹브라우저의 응답속도를 향상시킬 수 있다.  
+### 3-3-4. 헤더추가  
+해당 응답헤더에 캐시에 보관할건지 아닌지를 명시할 수 있다.  
+### 3-3-5. 리다이렉트  
+서버측에서 리다이렉트로 지정한 페이지에 다시 요청하라고 지시하는 기능(페이지 이동)  
+```jsp
+response.sendRedirect("이동할 페이지");
+```
 
 ## 3-4. 표현 언어  
 '${'와 '}'사이에 정해진 문법을 따르는 식을 사용함으로서 복잡한 코드를 간결하게 줄일 수 있다.  
